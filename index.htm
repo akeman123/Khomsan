@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<meta charset="utf-8">
+<title>Assignment09</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+<link rel='stylesheet' href='js-form-validation.css' type='text/css' />
+<script src="form_validation.js"></script>
+
+
+</head>
+<body onload="document.registration.userid.focus();">
+    <div class="box">
+        <span class="borderLine"></span>
+        <form name='registration' onSubmit="return formValidation();">
+            <h1>Registration Form</h1>
+        
+            <div class="inputbox">
+                <input type="text" name="userid" required="required" />
+                <span>User id:</span>
+                <i></i>
+            </div>
+
+            <div class="inputbox">
+                <input type="password" name="passid" required="required"  />
+                <span>Password:</span>
+                <i></i>
+            </div>
+            <div class="inputbox">                   
+                <input type="text" name="username"  required="required"/>
+                <span>Name:</span>
+                <i></i>
+            </div>
+            <div class="inputbox">                  
+                <input type="text" name="address"  required="required"/>
+                <span>Address:</span>
+                <i></i>
+            </div> 
+            
+            <div class="inputbox">
+                <input type="text" name="zip" required="required"/>
+                <span>ZIP Code:</span>
+                <i></i>
+            </div>
+            <div class="inputbox">  
+                <input type="text" name="email" required="required"/>
+                <span>Email:</span>
+                <i></i>
+            </div>
+
+            
+            <div class="inputCountry"> 
+                <br><span>Country:</span>
+                <select name="country">
+                <option selected="" value="Default">(Please select a country)</option>
+                <option value="AF">Australia</option>
+                <option value="AL">Canada</option>
+                <option value="DZ">India</option>
+                <option value="AS">Russia</option>
+                <option value="AD">USA</option>
+                </select>
+            </div>
+           
+
+
+
+
+            <div class="inputradio">
+                <br><span>Sex:</span><br><br>
+                <div class="hidden-toggles"> 
+                    <input name="sex" type="radio" id="coloration-Male" class="hidden-toggles__input" value="Male" checked>
+                    <label for="coloration-Male" class="hidden-toggles__label">Male</label>
+                    
+                    <input name="sex" type="radio" id="coloration-Female" class="hidden-toggles__input" value="Female">
+                    <label for="coloration-Female" class="hidden-toggles__label">Female</label>
+                </div>
+            </div>
+            <div class="inputradio">    
+                <br><span>Language:</span> <br><br>
+                <div class="hidden-toggles"> 
+                    <input name="en" type="radio" id="coloration-English" class="hidden-toggles__input" value="en" checked>
+                    <label for="coloration-English" class="hidden-toggles__label">English</label>
+                    
+                    <input name="en" type="radio" id="coloration-NonEnglish" class="hidden-toggles__input" value="noen">
+                    <label for="coloration-NonEnglish" class="hidden-toggles__label">Non English</label>
+                </div>
+            </div>
+            <div class="inputbox"> 
+                <span>About:</span>
+                <input type="text" name="desc" id="desc" required="required"></textarea>
+                <span>About:</span>
+                <i></i>
+            </div>  
+                <br><input  type="submit" name="submit" value="Submit" />
+            
+
+                
+            
+        </form>
+    </div>
+</body>
+</html>
